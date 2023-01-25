@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./res/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <p id="welcome">Vítejte u mého školního kvízu</p>
+    <button id="start">Start</button>
+    <button id="info">Informace ohledně otázek</button>
+    <audio id="mrbeat" autoplay loop>
+        <source src="./res/music/mrbeast.mp3" type="audio/mp3">
+    </audio>
+    <button id="back">Back</button>
+    <div id="otazky">
+    <p>Otázky budou na věci ohledně školy, např. programování, WAP, hardware atd.<br>Každá otázka má jenom jednu odpověď.</p>
+    <p id="pravidla">Pravidla<br><br>1)Je zakázáno vyhledávat jakékoliv odpovědi na internetu<br>2)Žák může odpovídat tím, že zvedne ruku<br>3) Pokud žák odpoví správně, tak získává 1 bod<br>4)Pokud žák odpoví špatně, tak už nemůže odpovědět znova na tu stejnou otázku<br>5)Vyhrává žák s nejvíce body na konci</p>
+    </div>
+
+    <div id="timer">
+        <p id="cas">60</p>
+    </div>
+
+    
+    <audio id="kahoot" loop>
+        <source src="./res/music/Kahoot.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="correct">
+        <source src="./res/music/correct.mp3" type="audio/mp3">
+    </audio>
+    <audio id="wrong">
+        <source src="./res/music/wrong.mp3" type="audio/mp3">
+    </audio>
+    
+    <div id="quiz1">
+        <div  id="question">   
+        </div>
+        <div id="result">
+        </div>
+        <div id="round">1/10
+        </div>
+        <div id="container">
+        <div id="row1">
+            <button class="option" onclick="" id="op1" ></button>
+      
+            <button class="option" id="op2" ></button>
+        </div>
+
+        <div id="row2">
+            <button class="option" id="op3"></button>
+      
+            <button class="option" id="op4"></button>
+        </div>
+    </div>
+    </div>
+
+    <button id="check">Check answer</button>
+    <button id="another">Continue</button>
+    <p id="thank">Děkuji za hraní mého školního kvízu!</p>
+    <img id="celebrate" src="./res/img/yippe.gif" alt="yippe">
+    <audio id="end" loop>
+        <source src="./res/music/yippe.mp3" type="audio/mp3">
+    </audio>
+    <script src="./res/js/main.js"></script>
+</body>
+</html>
